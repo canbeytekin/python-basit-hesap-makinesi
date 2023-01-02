@@ -6,14 +6,20 @@ HESAP MAKİNESİ
 3.Çarpma İşlemi
 4.Bölme İşlemi
 ***************************************""")
-
-a = int(input("Birinci Sayıyı Giriniz:"))                                                #kullanıcıdan tam sayı girmesini istedik ve bunlar a,b olarak iki değere atadık.
+"""
+kullanıcıdan tam sayı girmesini istedik ve bunlar a,b olarak iki değere atadık.
+"""
+a = int(input("Birinci Sayıyı Giriniz:"))                                                
 b = int(input("İkinci Sayıyı Giriniz:"))
-
-islem = input("Yapmak İstediğiniz İşlemi Seçin:")                                        #kullanıcıdan yapmak istediği işlemi yukarıda belirtilen işlemlerin karşılığı olan sayıya göre seçmesini istedik.
-
-if islem == "1":                                                                         #kullanıcının girdiği 4 işlem değerlerinin eşit olduğu koşullarda nasıl tepki vereceğine göre işlemleri sıraladık.
-    print("{} + {} = {}".format(a,b,a+b))                                            
+"""
+-kullanıcıdan yapmak istediği işlemi yukarıda belirtilen işlemlerin karşılığı olan sayıya göre seçmesini istedik.
+"""
+islem = input("Yapmak İstediğiniz İşlemi Seçin:")                                      
+"""
+-kullanıcının girdiği 4 işlem değerlerinin eşit olduğu koşullarda nasıltepki vereceğine göre işlemleri sıraladık.
+"""
+if islem == "1":                                                                         
+    print("{} + {} = {}".format(a,b,a+b))                                                
     print("İşleminiz Sonlandı..")
 elif islem == "2":
     print("{} - {} = {}".format(a,b,a-b))
